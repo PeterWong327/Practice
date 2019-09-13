@@ -21,3 +21,14 @@ function mysteryScoping2() {
 //prints:
 // in block
 // out of block
+
+
+function mysteryScoping3() {
+  const x = 'out of block';
+  if (true) {
+    var x = 'in block';
+    console.log(x);
+  }
+  console.log(x);
+}
+// prints out "SyntaxError: Identifier 'x' has already been declared"
