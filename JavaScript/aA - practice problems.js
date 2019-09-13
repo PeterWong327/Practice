@@ -6,7 +6,18 @@ function mysteryScoping1() {
   }
   console.log(x);
 }
-
 //prints:
 // in block
 // in block
+
+function mysteryScoping2() {
+  const x = 'out of block';
+  if (true) {
+    const x = 'in block';
+    console.log(x);
+  }
+  console.log(x);
+}
+//prints:
+// in block
+// out of block
