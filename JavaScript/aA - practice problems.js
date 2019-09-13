@@ -32,3 +32,29 @@ function mysteryScoping3() {
   console.log(x);
 }
 // prints out "SyntaxError: Identifier 'x' has already been declared"
+
+
+function mysteryScoping4() {
+  let x  = 'out of block';
+  if (true) {
+    let x = 'in block';
+    console.log(x);
+  }
+  console.log(x);
+}
+// prints out:
+// in block
+// out of block
+
+
+function mysteryScoping5() {
+  let x = 'out of block';
+  if (true) {
+    let x = 'in block';
+    console.log(x);
+  }
+  let x = 'out of block again';
+  console.log(x);
+}
+// prints out:
+// SyntaxError: Identifier 'x' has already been declared
