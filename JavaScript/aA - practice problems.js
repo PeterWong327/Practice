@@ -71,7 +71,7 @@ function mysteryScoping5() {
 // "We shall MAKE the BEST GUAC."
 
 function madLib(verb,adjective,noun) {
-  console.log('We shall' + verb + 'the' + adjective + noun);
+  console.log('We shall ' + verb + ' the ' + adjective + ' ' + noun + '.');
 }
 
 madLib('make', 'best', 'guac');
