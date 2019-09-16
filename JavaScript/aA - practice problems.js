@@ -93,3 +93,13 @@ function isSubstring(searchString, subString) {
   }
   return false;
 }
+
+
+function isSubstring(searchString, subString) {
+  let subs = searchString.split(" ");
+
+  if (subs.includes(subString)) {
+      return true;
+    }
+  return false;
+}
