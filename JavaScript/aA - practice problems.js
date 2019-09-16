@@ -80,3 +80,16 @@ function madLib(verb, adjective, noun) {
   console.log(`We shall ${verb} the ${adjective} ${noun}.`);
 }
 madLib('make', 'best', 'guac');
+
+
+function isSubstring(searchString, subString) {
+  let subs = searchString.split(" ");
+
+  for (let i = 0; i < subs.length; i++) {
+    let sub = subs[i];
+    if (subString === sub) {
+      return true;
+    }
+  }
+  return false;
+}
