@@ -67,12 +67,14 @@ function isPrime(number) {
 function sumOfNPrimes(n) {
   let sum = 0;
   let i = 0;
+  let j = 2;
 
   while (i < n) {
-    if (isPrime(i) === true) {
-        sum += i;
+    if (isPrime(j) === true) {
+        sum += j;
+        i++;
     }
-    i++;
+    j++;
   }
 
   return sum;
