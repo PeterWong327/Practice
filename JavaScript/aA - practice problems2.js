@@ -20,3 +20,32 @@ function fizzBuzz(array) {
 
   return newArray;
 }
+
+/* isPrime
+Define a function isPrime(number) that returns true if number is prime.
+Otherwise, false. Assume number is a positive integer.
+
+> isPrime(2)
+true
+
+> isPrime(10)
+false
+
+> isPrime(15485863)
+true
+
+> isPrime(3548563)
+false */
+
+function isPrime(number) {
+  if (number < 2) {
+    return false;
+  }
+  for (let i = 2; i < number; i++) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+
+  return true;
+}
