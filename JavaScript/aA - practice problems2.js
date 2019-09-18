@@ -49,3 +49,31 @@ function isPrime(number) {
 
   return true;
 }
+
+// sumOfNPrimes
+// Using firstNPrimes, write a function sumOfNPrimes(n) that returns the
+// sum of the first n prime numbers. Hint: use isPrime as a helper method.
+//
+// > sumOfNPrimes(0)
+// 0
+//
+// > sumOfNPrimes(1)
+// 2
+//
+// > sumOfNPrimes(4)
+// 17
+
+
+function sumOfNPrimes(n) {
+  let sum = 0;
+  let i = 0;
+
+  while (i < n) {
+    if (isPrime(i) === true) {
+        sum += i;
+    }
+    i++;
+  }
+
+  return sum;
+}
